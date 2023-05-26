@@ -41,7 +41,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: rgb(216,196,220);
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -52,7 +52,7 @@
 
 .icon-btn:hover {
   transform: scale(1.10);
-  color: #FFFFFF;
+  color: rgb(216,196,220);
 }
 
 /* main body */
@@ -67,7 +67,7 @@ body {
 /* main a -- links */
 
 a {
-  color: #004d40;
+  color: rgb(149, 126, 212);
 }
 
 .text-center {
@@ -126,26 +126,10 @@ ul.side-nav.fixed a {
   padding: 10px 0 12px;
 }
 
-/* ul.side-nav.fixed a {
-  box-sizing: content-box;
-  color: rgb(16, 202, 56);
-  display: block;
-  line-height: 100%;
-  padding: 10px 0 12px;
-} */
-
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
 }
-
-/* ul.side-nav.fixed li.logo {
-  background-color: #fafafa;
-  border-bottom: 1px solid #ddd;
-  box-sizing: content-box;
-  min-height: 90px;
-  padding: 30px 30px 40px;
-} */
 
 ul.side-nav.fixed li.logo {
   background-color: rgb(149, 126, 212);
@@ -211,7 +195,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: rgb(216,196,220);
   position: relative;
 }
 
@@ -440,22 +424,14 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: rgb(216,196,220) !important;
+  color: rgb(92, 62, 173) !important;
 }
-
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
 
 /* .teal */
 
 .teal {
-  background-color: rgb(216,196,220) !important;
+  background-color: rgb(92, 62, 173) !important;
 }
-
-/* .teal {
-  background-color: #00695c !important;
-} */
 
 @media (min-width: 1200px) {
   #experience .container {
