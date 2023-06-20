@@ -1,7 +1,7 @@
 .profile-pic {
   position: relative;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
   width: auto;
   height: auto;
   overflow: hidden;
@@ -9,9 +9,9 @@
   
   
   /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 2px solid rgb(92, 62, 173); 
+  margin: -35px; 
+  margin-left:-10px;
+  border: 3px solid white; 
   border-radius: 50% !important;
 }
 
@@ -116,6 +116,7 @@ ul.side-nav {
 
 ul.side-nav li {
   padding: 0;
+  height: 60px;
 }
 
 ul.side-nav.fixed a {
@@ -132,10 +133,9 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 }
 
 ul.side-nav.fixed li.logo {
-  background-color: rgb(149, 126, 212);
-  border-bottom: 1px solid rgb(149, 126, 212);
+  background-color: white;
   box-sizing: content-box;
-  min-height: 90px;
+  min-height: 200px;
   padding: 30px 30px 40px;
 }
 
@@ -145,8 +145,9 @@ ul.side-nav.fixed li.logo a {
 }
 
 ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
-  background-color: rgb(149, 126, 212);
-  border-left: 3px solid;
+  background-color: rgb(216,196,220);
+  border-left: 5px solid;
+  height: 46px; /* change height of each item in table of content*/
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
@@ -155,9 +156,12 @@ ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.l
 
 li.logo span {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
 }
 
+span {
+  font-size: 22px
+}
 .brand-logo h1 {
   font-size: inherit;
   line-height: inherit;
@@ -167,6 +171,7 @@ li.logo span {
 
 .container {
   width: 95%;
+  min-width:600px;
 }
 
 h3 {
@@ -200,7 +205,7 @@ h3 {
 }
 
 #intro.section .container {
-  color: white;
+  color: black; /*Font color of about me*/
   font-weight: 200;
   left: 0;
   position: absolute;
@@ -231,7 +236,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   height: 100%;
   left: 0;
   position: absolute;
@@ -243,6 +248,7 @@ h3 {
   /* The alpha value allows the text and background color
    of the button to still show through. */
   background-color: rgba(33, 150, 243, 0.2);
+  height: 60px;
 }
 
 .card {
@@ -424,13 +430,13 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: rgb(92, 62, 173) !important;
+  color: rgb(106, 85, 165) !important;
 }
 
 /* .teal */
 
 .teal {
-  background-color: rgb(92, 62, 173) !important;
+  background-color: rgb(106, 85, 165) !important;
 }
 
 @media (min-width: 1200px) {
@@ -465,11 +471,11 @@ small {
   }
   nav {
     background: #fff;
-    height: 300px;
+    height: 56px;
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: rgb(106, 85, 165);
     height: 56px;
     line-height: 56px;
   }
