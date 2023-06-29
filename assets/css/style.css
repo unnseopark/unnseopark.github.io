@@ -28,7 +28,7 @@
   right: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Secular+One);
+/* @import url(https://fonts.googleapis.com/css?family=Secular+One); */
 .social {
   margin: 0 auto;
   width: auto;
@@ -425,6 +425,10 @@ small {
 
 .grey-text {
   color: #666 !important;
+}
+
+.black-text {
+  color: black !important;
 }
 
 /* main .teal-text */
