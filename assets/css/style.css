@@ -372,7 +372,9 @@ a.hoverline:hover {
 .card.large .card-image {
   height: 230px;
 }
-
+img {
+  object-fit: cover;
+}
 .card.large .card-content {
   height: auto;
 }

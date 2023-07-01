@@ -92,7 +92,7 @@
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
           class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+            class="mdi-av-web small"></i><span>Experience</span></a>
       </li>
 
       <li class="bold">
@@ -101,7 +101,14 @@
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-file-folder-open small"></i><span>Projects</span></a>
       </li>
-      
+
+      <li class="bold">
+        <!-- mdi-thumb-up small
+        -->
+        <a aria-label="Navigate to the Leadership section" href="#leadership" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Leadership</span></a>
+      </li>
+
       <li class="bold">
         <!--
         ICONS:
@@ -133,7 +140,7 @@
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
         <a aria-label="Open Grace's resume in a new tab" href="https://unnseopark.github.io/assets/docs/PARK_GRACE.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-av-my-library-books small"></i><span>Resume</span></a>  
+        class="waves-effect waves-dark teal-text"><i class="mdi-action-description small"></i><span>Resume</span></a>  
       </li>
     </ul>
   </nav>
@@ -154,13 +161,16 @@
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
           class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+            class="mdi-av-web small"></i><span>Experience</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
-
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Leadership</span></a>
+      </li>
       <li class="bold">
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
@@ -168,6 +178,10 @@
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-description small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -205,7 +219,7 @@
                   <i class="fa fa-envelope"></i>
                 </button>
               </a>
-              <a href=href="https://unnseopark.github.io/assets/docs/PARK_GRACE.pdf" target="_blank">
+              <a href="https://unnseopark.github.io/assets/docs/PARK_GRACE.pdf" target="_blank">
                 <button class="icon-btn file">
                   <i class="fa fa-file-text"></i>
                 </button>
@@ -369,16 +383,17 @@
       <div class="container">
         <div class="row">
 
-          <div class="col s12 m6 l4">
+          <div class="col s12 m7 l7">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Anyways..." src="/assets/img/anyways.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
+                <span class="card-title activator teal-text hoverline">Anyways...<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A music streaming web app based on Django
+                  An AI created to help you stay focused on your discussion 
+                  by saying <em>“anyways… let's get back to our topic".</em>
                 </p>
               </div>
               <div class="card-reveal">
@@ -387,20 +402,13 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
-
+                  <li><b>Tools:</b> PyAudio, spaCy library</li>
+                  <li>Uses real time speech-to-text technology.</li>
+                  <li>Keyword similarity analysis from the spaCy natural language processing library.</li>
+                  <li>Designed an algorithm for detecting off-topic sentences using keyword similarity.</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/bhogayata/music-player"
+                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/darrenlee01/Anyways"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -409,35 +417,30 @@
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
+          <div class="col s12 m5 l5">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Campus Map" src="/assets/img/campus_map.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                <span class="card-title activator teal-text hoverline">Campus Map<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A quiz playing web app based on Django
+                  A prototype android app to help users find the shortest route between two locations on campus. 
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
+                  <li><b>Tools:</b> Google Maps API, Kotlin</li>
+                  <li>The app measures the distance the user walks to reach the destination from the starting point.</li>
+                  <li>The leaderboard displays the shortest paths that other users took.</li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
+                  <!-- TODO: add github repo for campusmap -->
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/unnseopark/"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -446,55 +449,16 @@
             </div>
           </div>
 
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
+          <div class="col s12 m5 l5">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of Drive Game" src="/assets/img/drive.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
+                <span class="card-title activator teal-text hoverline">Drive! Game<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A simple and extensible blog web-app based on Flask.
+                  A car-driving game that has a top-down view.
                 </p>
               </div>
               <div class="card-reveal">
@@ -503,55 +467,17 @@
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- VQA -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Visual Question Answering<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An attention-based classification model that aims at generating an answer for a given input image.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term
-                    Memory for extracting question
-                    embeddings.</li>
-                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the
-                    VQA evaluation metric.</li>
+                  <li>My first ever project written in Python!</li>
+                  <li>The player's car is always at the center and the background mimics 
+                    the real-world roads with obstacles that the car must not collide into, 
+                    such as other cars, bicycles, etc. A map generation algorithm creates 
+                    new random maps every time. 
+                  </li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                  <a aria-label="Visit the GitHub repo for project"
+                    href="https://github.com/unnseopark/drive_game" target="_blank"
                     data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -560,105 +486,147 @@
             </div>
           </div>
 
-          <!-- Video Summarizer -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m7 l7">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Screenshot of web app" src="/assets/img/blackjack.png"
+                style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Video Summarizer<i
+                <span class="card-title activator teal-text hoverline">Robot BlackJack<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A Seq2Seq model that generates a short summary of the given input video.
+                  Blackjack! Interaction with a Cheating Robot During Complex Gameplay.
                 </p>
               </div>
               <div class="card-reveal">
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for
-                    generating a summary.</li>
-                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,
-                    0.52 scores respectively on ROGUE,
-                    BLEU, METEOR evaluation metrics.</li>
-
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
+                A replication study of “No fair!! An interaction with a cheating robot.” by Short et al.
+                It was found that in a simple game of “Rock, paper, scissors" between a robot and a human participant, 
+                the participant will be more socially engaged and perceive the robot as acting more agentic if it cheats. 
+                We examine whether these differences between cheating and non-cheating behaviors remain under a more 
+                complex game “Blackjack."
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
+                  <a aria-label="View Presentation" href="https://docs.google.com/presentation/d/1F6CwSlx1tt-xT-AtY0fTwqHDZj4AoHyShGiZ_w2JU2M/edit?usp=sharing" 
+                  target="_blank" data-position="top" data-tooltip="View Presentation"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="View Paper" href="https://drive.google.com/file/d/1eJN4tjCVwhIgULYcyCesm79zZMY88E64/view?usp=sharing"
+                    target="_blank" data-position="top" data-tooltip="View Paper"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-file-text"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Image Generator -->
-          <div class="col s12 m6 l4">
+          <!-- ************* -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth Section: Leadership -->
+    <section id="leadership" class="section scrollspy">
+      <h3 class="page-title white-text teal">Leadership</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m12 l12">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="KSA" src="/assets/img/ksa.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Image Generator<i
+                <span class="card-title activator teal-text hoverline">Korean Student Association<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  An image generator based on the concept of adversarial networks (GANs)
+                  Executive member of CMU's KSA
                 </p>
               </div>
               <div class="card-reveal">
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs
-                    of generated and original image.</li>
-                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by
-                    the generator.</li>
-
+                  <li>I was actively involved in planning for various events such as food sales, mentor programs, 
+                    Korean Independence Day events on campus to promote Korean culture.</li>
+                  <li>I served as Social Media Chair for KSA. I created the official Instagram account and regularly posted stories and posts.</li>
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
+                  <a aria-label="Visit Instagram Page" href="https://www.instagram.com/cmu.ksa/"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                      class="fa fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Head Counting System -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
+                <img alt="Tartan Ambassador" src="/assets/img/tartan_ambassador.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Head Counting System<i
+                <span class="card-title activator teal-text hoverline">Tartan Ambassador<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A system that calculates the attendance of the class from a panoramic image of a live classroom.
+                  Tour guide for Carnegie Mellon Univeristy's campus tour. 
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Conduct hour-long in-person tours across campus for a group of up to 20 visitors which include prospective students and families.</li>
+                  <li>Learn a wide variety of information about CMU to expertly support visitors and articulate Carnegie Mellon University's brand story.</li>
+                  <li>Answer any questions and talk about my personal experience at CMU.</li>
+
+                </ul>
+                <div class="card-action">
+                  <!-- TODO: add github repo for campusmap -->
+                  <a aria-label="Visit website" href="https://www.cmu.edu/visit/ambassadors.html"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of Drive Game" src="/assets/img/drive.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Beyond Coding<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Taught 
                 </p>
               </div>
               <div class="card-reveal">
                 <!-- TODO: change this -- only close button -->
                 <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li>Used Singular Value Decomposition for image compression; applied various image processing
-                    techniques and morphological operations to
-                    detect the number of heads.</li>
+                  <li>My first ever project written in Python!</li>
+                  <li>The player's car is always at the center and the background mimics 
+                    the real-world roads with obstacles that the car must not collide into, 
+                    such as other cars, bicycles, etc. A map generation algorithm creates 
+                    new random maps every time. 
+                  </li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                  <a aria-label="Visit the GitHub repo for project"
+                    href="https://github.com/unnseopark/drive_game" target="_blank"
                     data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -671,8 +639,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Fourth Section: Education -->
+    <!-- Fifth Section: Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal">Education</h3>
       <div class="container">
@@ -741,7 +708,7 @@
       </div>
     </section>
 
-    <!-- Fifth Section: Contact -->
+    <!-- Sixth Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
