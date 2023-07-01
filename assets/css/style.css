@@ -9,8 +9,9 @@
   
   
   /* background-size: cover;  */
-  margin: -35px; 
+  margin: 0px;
   margin-left:-10px;
+  margin-top:-30px; /* adjust location of profile pic */
   border: 3px solid white; 
   border-radius: 50% !important;
 }
@@ -28,7 +29,6 @@
   right: 0;
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Secular+One); */
 .social {
   margin: 0 auto;
   width: auto;
@@ -48,6 +48,7 @@
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
+  margin-right: 20px;
 }
 
 .icon-btn:hover {
@@ -91,7 +92,7 @@ nav i {
 /* main */
 
 main {
-  background-color: rgb(255, 255, 255);
+  background: url(../../assets/img/bg.png) repeat;;
   padding-left: 300px;
 }
 
@@ -112,19 +113,23 @@ dt {
 
 ul.side-nav {
   width: 300px;
+  /* width of nav bar */
 }
 
 ul.side-nav li {
   padding: 0;
-  height: 60px;
+  /* height: 40px;  */
+  /* height of individual sections in nav */
 }
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(48, 122, 207);
+  /* color: rgb(48, 122, 207); */
   display: block;
-  line-height: 100%;
-  padding: 10px 0 12px;
+  line-height: 10%;
+  padding: 20px 0 0px;
+  margin-top: 0px;
+  height: 35px;
 }
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
@@ -133,10 +138,11 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 }
 
 ul.side-nav.fixed li.logo {
+  /* section above content list in nav */
   background-color: white;
   box-sizing: content-box;
-  min-height: 200px;
-  padding: 30px 30px 40px;
+  min-height: 220px;
+  padding: 40px 30px 40px; /* adjust placement of profile pic*/
 }
 
 ul.side-nav.fixed li.logo a {
@@ -145,9 +151,9 @@ ul.side-nav.fixed li.logo a {
 }
 
 ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
-  background-color: rgb(216,196,220);
-  border-left: 5px solid;
-  height: 46px; /* change height of each item in table of content*/
+  /* background-color: pink; color of content list after hover */
+  border-left: 6px solid;
+  /* height: 50px; change height of each item in table of content after hovering */
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
@@ -160,7 +166,7 @@ li.logo span {
 }
 
 span {
-  font-size: 22px
+  font-size: 20px /* font size of content on side nav */
 }
 .brand-logo h1 {
   font-size: inherit;
@@ -176,7 +182,7 @@ span {
 
 h3 {
   font-weight: 200;
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* gap between content and experience section header */
   margin-top: 0;
   padding: 30px 40px;
   text-transform: uppercase;
@@ -202,6 +208,8 @@ h3 {
 #intro.section {
   background: rgb(216,196,220);
   position: relative;
+  width: auto;
+  min-width: 600; /* minimum width of purple backgroud in intro */
 }
 
 #intro.section .container {
@@ -209,15 +217,8 @@ h3 {
   font-weight: 200;
   left: 0;
   position: absolute;
-  top: 0;
+  top: -50; /* adjust y-loc of all text in intro sections */
 }
-
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
 
 #intro.section .container *:not(span) {
   font-weight: 300;
@@ -226,10 +227,10 @@ h3 {
   /* padding: 0 0px; */
   /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
-
+/* 
 #intro.section .underline {
   border-bottom: 5px solid #24305e;
-}
+} */
 
 #intro.section .teal {
   padding: 0 10px;
@@ -252,7 +253,7 @@ h3 {
 }
 
 .card {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* vertical gap between work + project cards */
 }
 
 .card .role {
@@ -357,25 +358,6 @@ a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
 
-#skills .card.large {
-  height: 360px;
-}
-
-#skills h4 {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-}
-
-#skills .col img.responsive-img {
-  margin: 0 auto;
-  max-height: 100px;
-  padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-}
-
 .card.large .card-content p {
   color: inherit;
   margin: 0;
@@ -396,7 +378,7 @@ a.hoverline:hover {
 }
 
 .card.medium .card-image {
-  height: 240px;
+  height: 240px; /* height of image in project card */
 }
 
 .card-action a.btn-floating {
