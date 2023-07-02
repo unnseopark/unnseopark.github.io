@@ -7,7 +7,7 @@
 ✔️ About me\
 ✔️ Experience\
 ✔️ Projects \
-✔️ Skills \
+✔️ Leadership \
 ✔️ Education\
 ✔️ Contact Info\
 ✔️ Resume
