@@ -92,8 +92,9 @@ nav i {
 /* main */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;;
+  background: url(../../assets/img/bg.png) repeat;
   padding-left: 300px;
+  min-width:600px;
 }
 
 dl {
