@@ -249,6 +249,14 @@ h3 {
   background-color: white;
 }
 
+.contact_page_button {
+  background-color: rgb(149, 126, 212);
+}
+
+.contact_page_button:hover {
+  background-color: rgb(149, 126, 212);
+}
+
 .main_page_button:focus {
   background-color: rgba(255, 255, 255, 0.712);
 }
